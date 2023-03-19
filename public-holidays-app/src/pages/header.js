@@ -1,5 +1,5 @@
 import React from "react";
-import MenuLinks from "./menuLinks";
+import MenuLinks from "../components/menuLinks";
 const Header = ({ className }) => {
   return (
     <React.Fragment>
