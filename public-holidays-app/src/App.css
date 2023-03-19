@@ -11,5 +11,7 @@ h1{
   color: white;
 }
 .menu{
-  background-color: brown;
+  background-color: navy;
+  color: aliceblue;
+  margin: 5px;
 }

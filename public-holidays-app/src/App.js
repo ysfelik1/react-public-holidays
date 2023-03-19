@@ -10,9 +10,7 @@ import { Container } from 'react-bootstrap';
 
 // const baseHref = document.querySelector('base').getAttribute('href').replace(/\/$/, '');
 function App() {
-
   return (
-
     <Router>
       <Header className={"header"} />
       <Container className="mt-4">
@@ -23,7 +21,6 @@ function App() {
         </Routes>
       </Container>
     </Router>
-
   );
 }
 
