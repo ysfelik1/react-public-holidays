@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Public-Holidays"
+  },
+  {
+    "id": 2,
+    "name": "UpComing-Public-Holidays"
+  },
+  {
+    "id": 3,
+    "name": "Is-Today-Holiday"
+  }
+]
