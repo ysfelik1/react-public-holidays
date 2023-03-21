@@ -4,7 +4,7 @@ import ErrorPage from '../components/ErrorPage';
 import Loader from '../components/Loader';
 
 const PublicHolidays = () => {
-  const { data, isLoading, error } = useFetch(`https://date.nager.at/api/v3/PublicHolidays/2023/TR`);
+  const { data, isLoading, error } = useFetch(`https://date.nager.at/api/v3/PublicHolidays/2023/TR`,false);
 
   return isLoading ? <Loader /> : error ? <ErrorPage errorText={error.message} /> : (
     <div>

@@ -6,7 +6,11 @@ const Header = ({ className }) => {
       <div className={className}>
         <h1>Public Holidays World Wide</h1>
       </div>
-      <MenuLinks className={"menu"} />
+      <nav class="navbar navbar-dark bg-light justify-content-around">
+        <ul class="nav nav-pills nav-fill">
+          <MenuLinks className={"nav-link m-2"} />
+        </ul>
+      </nav>
     </React.Fragment>
   );
 };
