@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function useFetch(url) {
+export default function useFetch(url, check) {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -13,8 +13,19 @@ export default function useFetch(url) {
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        const jsonData = await response.json();
-        setData(jsonData);
+        if (check === true) {
+          if (response.status === 204) {
+            setData(false);
+          }
+          if (response.status === 200) {
+            setData(true);
+          }
+        }
+        else{
+          const jsonData = await response.json();
+          setData(jsonData);
+        }
+      
         setError(null);
       } catch (error) {
         setError(error);
@@ -22,7 +33,6 @@ export default function useFetch(url) {
       setIsLoading(false);
     };
     fetchData();
-  }, [url]);
-
+  }, [url,check]);
   return { data, isLoading, error };
 }
