@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+//check argument is just for TodayHolidays component
 export default function useFetch(url, check) {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);

@@ -3,7 +3,7 @@ const menuItems = require("../data/menu.json");
 const MenuLinks = ({ className }) => {
   return (
     menuItems.map((item) => (
-      <li class="nav-item">
+      <li key={item.id} className="nav-item">
         <Link key={item.id} to={`/${item.name}`} className={className}>
           {item.name.replace(/-/g, " ")}
         </Link>
