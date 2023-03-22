@@ -8,7 +8,6 @@ const UpComingHolidays = () => {
 
   return isLoading ? <Loader /> : error ? <ErrorPage errorText={error.message} /> : (
       <div>
-        <h1 style={{color: "blue"}}>Upcoming Holidays for next 7 days</h1>
         <CardPublicHolidays data={data}/>
       </div>
   );
