@@ -10,3 +10,7 @@
 h1{
   color: white;
 }
+.selects{
+  gap: 1rem;
+  display:flex;
+}
