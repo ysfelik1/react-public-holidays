@@ -15,6 +15,7 @@ function App() {
         <Header className={"header"} />
         <Container className="mt-4 mb-4">
           <Routes>
+          <Route exact path="/" element={<PublicHolidays />} />
             <Route exact path="/Public-Holidays" element={<PublicHolidays />} />
             <Route exact path="/UpComing-Public-Holidays" element={<UpComingHolidays />} />
             <Route exact path="/Is-Today-Holiday" element={<TodayHolidays />} />
