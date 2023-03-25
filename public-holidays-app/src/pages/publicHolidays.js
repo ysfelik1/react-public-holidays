@@ -22,7 +22,7 @@ const PublicHolidays = () => {
   return isLoading ? <Loader /> : error ? <ErrorPage errorText={error.message} /> : (
     <div>
       <div className='selects'>
-        <SelectCountries handleCountryChange={handleCountryChange} selectedValue={countryCode}/>
+        <SelectCountries handleCountryChange={handleCountryChange} selectedValue={countryCode} />
         <SelectYears handleYearChange={handleYearChange} selectedValue={year} />
       </div>
       <CardPublicHolidays data={data} />
