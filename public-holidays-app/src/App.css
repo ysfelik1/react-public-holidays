@@ -7,6 +7,12 @@
   background-position: center bottom;
   padding: 4rem;
 }
+.bg-light{
+  background-color: #333333;
+}
+.bg-dark{
+  background-color: #f1f1f1;
+}
 h1{
   color: white;
 }
