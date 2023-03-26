@@ -12,7 +12,6 @@ import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-
     <Router>
       <Header className={"header text-center"} />
       <Container className="mt-4 mb-4">
